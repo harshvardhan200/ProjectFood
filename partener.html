@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Be a Partner</title>
+    <style>
+        body
+        {
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            background-color: rgb(241, 241, 184);
+        }
+        .navbar
+        {
+            display: flex;
+            align-items: center;
+            padding: 10px 20px;
+            background-color: white;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            position: relative;
+            border-radius: 5px;
+            margin: 20px;
+        }
+        .navbar .logo
+        {
+            font-size: 40px;
+            font-weight: bold;
+            color: rgb(159, 185, 9);
+        }
+        .navbar nav ul
+        {
+            list-style: none;
+            display: flex;
+        }
+        .navbar nav ul li a
+        {
+            text-decoration: none;
+            color: #333;
+            font-weight: 500;
+            padding-left: 80px;
+        }
+        #log
+        {
+            height: 50px;
+        }
+        #sig
+        {
+            margin-left: 250px;
+            padding-left: 0px;
+            margin-right: 0px;
+            background-color: rgb(187, 184, 12);
+            border-radius: 5px;
+            padding: 8px;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #e6cb32, #e6bc32, #edff47);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .partner-container {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+            width: 400px;
+            box-sizing: border-box;
+        }
+        .partner-container h2 {
+            margin-bottom: 20px;
+            color: #FF6347;
+        }
+        .partner-container form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        .partner-container label
+        {
+            font-size: 14px;
+            color: #555;
+        }
+        .partner-container input,
+        .partner-container select, 
+        .partner-container textarea
+        {
+            padding: 10px;
+            font-size: 14px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+        .partner-container button
+        {
+            padding: 10px;
+            font-size: 16px;
+            background-color: #ff6f61;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .partner-container button:hover
+        {
+            background-color: #e65b50;
+        }
+        .part-top
+        {
+            display: flex;
+            justify-content: space-between;
+        }
+        .page
+        {
+            display: flex;
+            justify-content: space-around;
+        }
+    </style>
+</head>
+<body>
+
+    <div>
+        <div class="navbar">
+
+            <img src="image\logo.png" alt="" id="log" >
+            <div class="logo">
+                City Eats
+            </div>
+            <nav class="oo">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="partener.html">Be a partener with us</a></li>
+                    <li><a href="contact-us.html">Contact Us</a></li>
+                    <li><a href="help.html">Help</a></li>
+                    <li><a href="#signin" id="sig">Sign In</a></li>
+                </ul>
+            </nav>
+    
+        </div>
+    
+        <div class="page">
+            <div class="partner-container">
+                <div class="part-top">
+                    <div>
+                        <h2>Be a Partner</h2>
+                    </div>
+                    <div>
+                        <a href="index.html"><img src="image\cancel.png" style="height: 30px; " alt=""></a>
+                    </div>
+                </div>
+                <form id="partner-form">
+                    <label for="business-type">Business Type:</label>
+                    <select id="business-type" name="business-type" required>
+                        <option>Select</option>
+                        <option value="delivery-person">Delivery Person</option>
+                        <option value="restaurant">Restaurant</option>
+                    </select>
+        
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" placeholder="Your Name" required>
+        
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="Your Email" required>
+        
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" name="phone" placeholder="Your Phone Number" required>
+        
+                    <label for="location">Location:</label>
+                    <input type="text" id="location" name="location" placeholder="Your Location" required>
+        
+                    <label for="details">Additional Details:</label>
+                    <textarea id="details" name="details" rows="4" placeholder="Any additional information"></textarea>
+        
+                    <button>Submit</button>
+                </form>
+                <div class="success-message" style="display: none;">Your application has been submitted successfully!</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
